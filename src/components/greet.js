@@ -4,6 +4,11 @@ import React from 'react';
 // }
 const greet=(props)=>{
     console.log(props)
-    return <h2>Hello {props.name}</h2>
+    return (
+        <div>
+        <h2>Hello {props.name} a.k.a {props.heroname}</h2>
+        {props.children}
+        </div>
+    ) 
 }
 export default greet;

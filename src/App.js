@@ -1,15 +1,20 @@
 import './App.css';
 import React from 'react';
 import Greet from './components/greet'
-//import Welcome from './components/welcome';
+import Welcome from './components/welcome';
 //import Hello from './components/hello';
 function App() {
   return (
     <div className="App">
-      <Greet name="Sasi"/><br/>
-      <Greet name="Srinija"/><br/>
-      <Greet name="Sindhu"/><br/>
-      
+      <Greet name="Sasi" heroname="captian">
+        <p>This is children</p>
+      </Greet><br/>
+      <Greet name="Srinija" heroname="wanda">
+        <button>Click</button>  
+      </Greet><br/>
+      <Greet name="Sindhu" heroname="vision"/><br/>
+      <Welcome name="Sasi" heroname="captian" />
+      <Welcome name="Srinija" heroname="wanda"/>
     </div>
   );
 }
